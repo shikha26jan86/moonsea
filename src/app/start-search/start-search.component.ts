@@ -12,4 +12,5 @@ export class StartSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  testmethod(){}
 }
