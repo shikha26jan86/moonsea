@@ -1,0 +1,51 @@
+<body>
+  <div class="container">
+    <div style="color: blue;">
+      <div class="row m-5 p-3">
+        <div style="font-size: xx-large; font-family: fantasy;" class="col-4">MOONSEA</div>
+        <div class="col-2">collection</div>
+        <div class="col-2">status</div>
+        <div class="col-2">How it Works</div>
+        <div class="col-2">Update</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container" style="color: blue;">
+
+    <div class="row ">
+
+      <div class="col-4"><br><br><br>
+       <h3 style="color:blue;">Discover a</h3>  
+       <h4 style="color: beige;">  sea full of net </h4>
+       <h5 style="color:beige;">collection</h5><br>
+        <button style="background-color:blue;">Start Search</button><br><br><br><br><br><br>
+      </div>
+      <br>
+      <br>
+      <div class="col-5">
+        <div class="centre">
+          <p-carousel [value]="arrOfImages" [circular]="true">
+            <ng-template pTemplate="header">
+          
+            </ng-template>
+            <ng-template let-product pTemplate="item">
+              <div class="product-item">
+                <div class="product-item-content">
+                  <div class="mb-3">
+                    <img src="{{product.image}}" class="product-image" />
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </p-carousel>
+        </div>
+      </div>
+
+      <div class="col-3"><br><br><br>
+       <h4 style="color:azure;"> task Collection</h4>
+       <h5 style="color: blue;">by OXEC---5 items </h5>
+         <br>
+        <button style="background-color:blue;">View Collection</button>
+      </div>
+    </div>
